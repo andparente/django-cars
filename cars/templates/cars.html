@@ -114,13 +114,11 @@
     <div class="car-card">
       {% if car.photo %}
       <img src="{{ car.photo.url }}" alt="{{ car.model }} - {{ car.brand }}">
-      <h2>{{ car.brand }} {{ car.model }}</h2>
-      <p>{{ car.factory_year }} - R$ {{ car.price }}</p>
       {% else %}
-      <img src="" alt="Imagem não cadastrada." />
+      <p class="no-photo">Foto não disponível</p>
+      {% endif %}
       <h2>{{ car.brand }} {{ car.model }}</h2>
       <p>{{ car.factory_year }} - R$ {{ car.price }}</p>
-      {% endif %}
     </div>
   </a>
 
