@@ -1,0 +1,10 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+.vscode
+media
+venv
+db.sqlite3
